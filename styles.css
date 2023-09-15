@@ -1,71 +1,116 @@
-/* Add your CSS styles here to enhance the login page */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    
+    background: url('wallpaper\ override.jpeg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: solid;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 2em;
+    color: #000000;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #000000;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #000000;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #000000;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #000000;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;  
 }
 
-.login-container {
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 400px;
+.forget label input{
+    margin-right: 3px;
+    
 }
-
-h2 {
-  margin-bottom: 20px;
-  color: #007bff;
+.forget label a{
+    color: #000000;
+    text-decoration: none;
 }
-
-.form-group {
-  text-align: left;
-  margin-bottom: 20px;
+.forget label a:hover{
+    text-decoration: underline;
 }
-
-label {
-  font-weight: bold;
-  display: block;
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #626262;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
 }
-
-input[type="text"],
-input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+.register{
+    font-size: .9em;
+    color: #000000;
+    text-align: center;
+    margin: 25px 0 10px;
 }
-
-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.register p a{
+    text-decoration: none;
+    color: #7b7878;
+    font-weight: 600;
 }
-
-button:hover {
-  background-color: #0056b3;
-}
-
-.forgot-password {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-.forgot-password a {
-  text-decoration: none;
-  color: #007bff;
-}
-
-.forgot-password a:hover {
-  text-decoration: underline;
+.register p a:hover{
+    text-decoration: underline;
 }
