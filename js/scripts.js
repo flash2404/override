@@ -23,7 +23,7 @@ function closeSidebar() {
 var barChartOptions = {
   series: [
     {
-      data: [10, 16, 6, 23, 14],
+      data: [87, 54, 17, 25, 23],
       name: 'Alerts',
     },
   ],
@@ -213,7 +213,7 @@ var areaChartOptions = {
   yaxis: [
     {
       title: {
-        text: 'Number of Alers',
+        text: 'Number of Checks',
         style: {
           color: '#f5f7ff',
         },
